@@ -1,37 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Task } from './task.model';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
 
   private tasks: Task[] = [
-     {
-    id: 1,
-    title: 'Study Angular',
-    description: 'Learn basics',
-    dueDate: '2026-03-30',
-    status: 'Pending',
-    priority: 'High'
-  },
-  {
-    id: 2,
-    title: 'Build Project',
-    description: 'TaskFlow app',
-    dueDate: '2026-04-01',
-    status: 'In Progress',
-    priority: 'Medium'
-  },
-  {
-    id: 3,
-    title: 'Submit Exam',
-    description: 'Upload to GitHub',
-    dueDate: '2026-04-05',
-    status: 'Completed',
-    priority: 'Low'
-  }
+ 
   ];
 
   getTasks(): Task[] {

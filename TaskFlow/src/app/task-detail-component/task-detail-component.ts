@@ -4,9 +4,11 @@ import { RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { TaskService } from '../task.service';
 import { Task } from '../task.model';
+import { RouterOutlet, RouterLink } from '@angular/router'
+
 @Component({
   selector: 'app-task-detail',
-  imports: [RouterModule],
+  imports: [RouterModule,RouterOutlet,RouterLink],
   templateUrl: './task-detail-component.html',
   styleUrl: './task-detail-component.css',
 })
